@@ -4,6 +4,7 @@ import com.sun.jdi.IntegerType;
 
 import java.awt.*;
 import java.util.List;
+import java.util.Optional;
 
 public class PECS <T> {
 	
@@ -23,11 +24,11 @@ public class PECS <T> {
 		Class3 class3 = parameter.get(0);
 		Class4 class4 = (Class4) parameter.get(0);
 		Class5 class5 = (Class5) parameter.get(0);
-		parameter.add(new Class1());
-		parameter.add(new Class2());
-		parameter.add(new Class3());
-		parameter.add(new Class4());
-		parameter.add(new Class5());
+//		parameter.add(new Class1());
+//		parameter.add(new Class2());
+//		parameter.add(new Class3());
+//		parameter.add(new Class4());
+//		parameter.add(new Class5());
 	}
 	
 	public T method(T a) {
@@ -50,4 +51,9 @@ public class PECS <T> {
 		// нельзя, потому что вторым параметром передаем Float
 		System.out.println(method3(100.0f, Float.class) );
 	}
+
+	class Test {}
+
+	class Test2 extends Test {}
+
 }
